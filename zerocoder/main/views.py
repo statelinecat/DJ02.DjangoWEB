@@ -11,3 +11,9 @@ def index(request):
 
 def new(request):
     return render(request, 'main/new.html', context={'caption':"График2"})
+
+def page3(request):
+    return render(request, 'main/page3.html', context={'caption':"График3"})
+
+def page4(request):
+    return render(request, 'main/page4.html', context={'caption':"График4"})
