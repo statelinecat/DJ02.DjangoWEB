@@ -5,15 +5,23 @@ from django.http import HttpResponse
 
 def index(request):
     data = {
-        'caption': "График",
+        'caption': "Графики и диаграммы",
         }
     return render(request, 'main/index.html', context=data) #, context:{'caption':"График"})
 
-def new(request):
-    return render(request, 'main/new.html', context={'caption':"График2"})
+def page2(request):
+    return render(request, 'main/page2.html', context={'caption':"Линейные графики"})
 
 def page3(request):
-    return render(request, 'main/page3.html', context={'caption':"График3"})
+    return render(request, 'main/page3.html', context={'caption':"Столбчатые диаграммы"})
 
 def page4(request):
-    return render(request, 'main/page4.html', context={'caption':"График4"})
+    return render(request, 'main/page4.html', context={'caption':"Круговые диаграммы"})
+def page5(request):
+    return render(request, 'main/page5.html', context={'caption':"Гистограммы"})
+def page6(request):
+    return render(request, 'main/page6.html', context={'caption':"Точечные графики"})
+def page7(request):
+    return render(request, 'main/page7.html', context={'caption':"Пузырьковые графики"})
+def page8(request):
+    return render(request, 'main/page8.html', context={'caption':"Диаграммы потока"})
